@@ -79,8 +79,9 @@ export default class App extends React.Component {
     let arr = this.state.gameState.slice();
     arr[row][col] = currentPlayer;
     this.setState({gameState: arr});
+    
 
-    //para otro jugador
+    //para el turno del otro jugador
     let nextPlayer = (currentPlayer == 1) ? -1 : 1;
     this.setState({currentPlayer: nextPlayer});
 
@@ -172,7 +173,7 @@ const styles = StyleSheet.create({
   },
 
   titleX: {
-    color: "red",
+    color: "#ff00ff",
     fontSize: 60,
     // flex:1,
     // alignItems: "center",
@@ -180,7 +181,7 @@ const styles = StyleSheet.create({
   },
 
   titleO: {
-    color: "green",
+    color: "#00ffff",
     fontSize: 60,
     // flex:1,
     // alignItems: "center",

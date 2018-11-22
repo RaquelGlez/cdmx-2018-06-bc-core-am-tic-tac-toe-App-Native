@@ -15,16 +15,19 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginBottom: 50,
     backgroundColor: 'yellow',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
   },
   title: {
+    height: 100,
     color:'black',
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
     flex: 1,
     textAlign: 'center',
-    margin: 10,   
   }
 });
